@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int sayi;
+
+int faktoriyel(int sayi)
+{
+    if (sayi==1)  return 1;
+    
+    return faktoriyel(sayi-1)*sayi;
+}
+
+
+
+int main()
+{   
+
+    cout<<"Sayı: "<<endl;
+    cin>>sayi;
+    cout << "sonuc: " ;
+    for (int i=sayi; i >=1 ; i--)
+    {   
+        
+        cout << i ;
+        if (i==1) break;
+        cout << "*"; 
+    }
+    cout << "=" << faktoriyel(sayi);
+
+
+}
